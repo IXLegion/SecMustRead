@@ -115,6 +115,7 @@ Notes: ${item.notes || 'No notes'}
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
+    a.download = 'security-checklist-report.pdf';
     a.download = 'security-checklist-report.txt';
     document.body.appendChild(a);
     a.click();
@@ -481,7 +482,7 @@ Notes: ${item.notes || 'No notes'}
           <div className="flex justify-between items-center">
             <div className="flex items-center">
               <Shield className="h-8 w-8 text-indigo-600" />
-              <h1 className="ml-3 text-2xl font-bold text-gray-900">Security Checklist System</h1>
+              <h1 className="ml-3 text-2xl font-bold text-gray-900">SecMustRead</h1>
             </div>
             <div className="flex space-x-4">
               <button
